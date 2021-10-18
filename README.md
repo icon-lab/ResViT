@@ -3,4 +3,4 @@ Official Implementation of Residual Vision Transformers(ResViT) which is describ
 
 Onat Dalmaz and Mahmut Yurt and Tolga Çukur ResViT: Residual vision transformers for multi-modal medical image synthesis. arXiv. 2021.
 
-<img src="main_fig.png" width="900px"/>
+<img src="main_fig.png" width="400px"/>
