@@ -73,3 +73,22 @@ python3 test.py --dataroot Datasets/IXI/T1_T2__PD/ --name T1_T2_PD_IXI_resvit --
 <br />
 For one-to-one tasks: <br />
 python3 test.py --dataroot Datasets/IXI/T1_T2/ --name T1_T2_IXI_resvit --gpu_ids 0 --model resvit_one --which_model_netG resvit --dataset_mode aligned --norm batch --phase test --output_nc 1 --input_nc 1 --how_many 10000 --serial_batches --fineSize 256 --loadSize 256 --results_dir results/ --checkpoints_dir checkpoints/ --which_epoch latest
+
+# Citation
+You are encouraged to modify/distribute this code. However, please acknowledge this code and cite the paper appropriately.
+```
+@misc{dalmaz2021resvit,
+      title={ResViT: Residual vision transformers for multi-modal medical image synthesis}, 
+      author={Onat Dalmaz and Mahmut Yurt and Tolga Çukur},
+      year={2021},
+      eprint={2106.16031},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+}
+```
+For any questions, comments and contributions, please contact Onat Dalmaz (onat[at]ee.bilkent.edu.tr) <br />
+
+(c) ICON Lab 2021
+
+## Acknowledgments
+This code is based on the Pytorch implementation of [pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
