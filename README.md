@@ -48,7 +48,7 @@ You should structure your aligned dataset in the following way:
 ```
 Note that for many-to-one tasks, source modalities should be in the Red and Green channels. (For 2 input modalities)
 
-## Pre-training ART blocks without the presence of transformers
+## Pre-training of ART blocks without the presence of transformers
 For many-to-one tasks: <br />
 python3 train.py --dataroot Datasets/IXI/T1_T2__PD/ --name T1_T2_PD_IXI_pre_trained --gpu_ids 0 --model resvit_many --which_model_netG res_cnn --which_direction AtoB --lambda_A 100 --dataset_mode aligned --norm batch --pool_size 0 --output_nc 1 --input_nc 3 --loadSize 256 --fineSize 256 --niter 50 --niter_decay 50 --save_epoch_freq 5 --checkpoints_dir checkpoints/ --display_id 0
 <br />
