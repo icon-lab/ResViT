@@ -91,4 +91,4 @@ For any questions, comments and contributions, please contact Onat Dalmaz (onat[
 (c) ICON Lab 2021
 
 ## Acknowledgments
-This code uses libraries from [pGAN](https://github.com/icon-lab/pGAN-cGAN) [pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) repository.
+This code uses libraries from [pGAN](https://github.com/icon-lab/pGAN-cGAN) and [pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) repository.
