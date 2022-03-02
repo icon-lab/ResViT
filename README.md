@@ -63,6 +63,7 @@ python3 train.py --dataroot Datasets/IXI/T1_T2/ --name T1_T2_IXI_pre_trained --g
 
 <br />
 <br />
+
 ## Fine tune ResViT
 For many-to-one tasks: <br />
 
@@ -75,6 +76,7 @@ python3 train.py --dataroot Datasets/IXI/T1_T2/ --name T1_T2_IXI_resvit --gpu_id
 
 <br />
 <br />
+
 ## Testing
 For many-to-one tasks: 
 <br />
@@ -88,10 +90,9 @@ python3 test.py --dataroot Datasets/IXI/T1_T2__PD/ --name T1_T2_PD_IXI_resvit --
 For one-to-one tasks: 
 <br />
 
-
+```
 python3 test.py --dataroot Datasets/IXI/T1_T2/ --name T1_T2_IXI_resvit --gpu_ids 0 --model resvit_one --which_model_netG resvit --dataset_mode aligned --norm batch --phase test --output_nc 1 --input_nc 1 --how_many 10000 --serial_batches --fineSize 256 --loadSize 256 --results_dir results/ --checkpoints_dir checkpoints/ --which_epoch latest
-
-
+```
 # Citation
 You are encouraged to modify/distribute this code. However, please acknowledge this code and cite the paper appropriately.
 ```
