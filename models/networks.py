@@ -163,12 +163,6 @@ def define_D(input_nc, ndf, which_model_netD,vit_name,img_size,
         netD = NLayerDiscriminator(input_nc, ndf, n_layers_D, norm_layer=norm_layer, use_sigmoid=use_sigmoid, gpu_ids=gpu_ids)
     elif which_model_netD == 'pixel':
         netD = PixelDiscriminator(input_nc, ndf, norm_layer=norm_layer, use_sigmoid=use_sigmoid, gpu_ids=gpu_ids)
-    elif which_model_netD == 'transformer':
-        netD = residual_transformers.Transformer_Discriminator(residual_transformers.CONFIGS[vit_name],img_size=img_size, output_dim=1, zero_head=False, vis=False)
-        config_vit = residual_transformers.CONFIGS[vit_name]
-        pre_trained_trans = True
-        if pre_trained_trans:
-            netD.load_from(weights=np.load(config_vit.pretrained_path))
     else:
         raise NotImplementedError('Discriminator model name [%s] is not recognized' %
                                   which_model_netD)
