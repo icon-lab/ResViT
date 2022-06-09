@@ -1,7 +1,7 @@
 # ResViT
-Official Pytorch Implementation of Residual Vision Transformers(ResViT) which is described in the [following](https://arxiv.org/abs/2106.16031) paper:
+Official Pytorch Implementation of Residual Vision Transformers(ResViT) which is described in the [following](https://ieeexplore.ieee.org/document/9758823) paper:
 
-Onat Dalmaz and Mahmut Yurt and Tolga Çukur ResViT: Residual vision transformers for multi-modal medical image synthesis. arXiv. 2021.
+Onat Dalmaz and Mahmut Yurt and Tolga Çukur ResViT: Residual vision transformers for multi-modal medical image synthesis.  IEEE Transactions on Medical Imaging. 2022.
 
 <img src="main_fig.png" width="600px"/>
 
