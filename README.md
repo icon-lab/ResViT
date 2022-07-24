@@ -119,14 +119,15 @@ python3 test.py --dataroot Datasets/IXI/T1_T2/ --name T1_T2_IXI_resvit --gpu_ids
 # Citation
 You are encouraged to modify/distribute this code. However, please acknowledge this code and cite the paper appropriately.
 ```
-@misc{dalmaz2021resvit,
-      title={ResViT: Residual vision transformers for multi-modal medical image synthesis}, 
-      author={Onat Dalmaz and Mahmut Yurt and Tolga Çukur},
-      year={2021},
-      eprint={2106.16031},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
-}
+@ARTICLE{resvit,
+author={Dalmaz, Onat and Yurt, Mahmut and Çukur, Tolga},
+journal={IEEE Transactions on Medical Imaging}, 
+title={ResViT: Residual vision transformers for multi-modal medical image synthesis},
+year={2022}, 
+volume={},
+number={}, 
+pages={1-1},
+doi={10.1109/TMI.2022.3167808}}
 ```
 For any questions, comments and contributions, please contact Onat Dalmaz (onat[at]ee.bilkent.edu.tr) <br />
 
