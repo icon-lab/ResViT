@@ -25,7 +25,7 @@ cd ResViT
 ## Download pre-trained ViT models from Google
 * [Pre-trained ViT models](https://console.cloud.google.com/storage/vit_models/):
 ```bash
-wget https://storage.googleapis.com/vit_models/imagenet21k/R50-ViT-B_16.npz &&
+wget https://storage.googleapis.com/vit_models/imagenet21k/R50+ViT-B_16.npz &&
 mkdir ../model/vit_checkpoint/imagenet21k &&
 mv {MODEL_NAME}.npz ../model/vit_checkpoint/imagenet21k/R50-ViT-B_16.npz
 ```
