@@ -55,7 +55,7 @@ You should structure your aligned dataset in the following way:
 Note that for many-to-one tasks, source modalities should be in the Red and Green channels. (For 2 input modalities)
 
 ## Pre-training of ART blocks without the presence of transformers
-It is recommended to pretrain the convolutional parts of the ResViT model before inserting transformer modules and fine-tuning. This can help improve the model's performance and allow it to learn more complex features from the data.
+It is recommended to pretrain the convolutional parts of the ResViT model before inserting transformer modules and fine-tuning. This signifcantly improves ResViT's.
 
 For many-to-one tasks: 
 
