@@ -31,6 +31,12 @@ mv {MODEL_NAME}.npz ../model/vit_checkpoint/imagenet21k/R50-ViT-B_16.npz
 ```
 
 ## Dataset
+To reproduce the results reported in the paper, we recommend the following dataset processing steps:
+
+Sequentially select subjects from the dataset.
+Apply skull-stripping to 3D volumes.
+Select 2D cross-sections from each subject.
+Normalize the selected 2D cross-sections before training and before metric calculation.
 You should structure your aligned dataset in the following way:
 ```
 /Datasets/BRATS/
@@ -49,6 +55,8 @@ You should structure your aligned dataset in the following way:
 Note that for many-to-one tasks, source modalities should be in the Red and Green channels. (For 2 input modalities)
 
 ## Pre-training of ART blocks without the presence of transformers
+It is recommended to pretrain the convolutional parts of the ResViT model before inserting transformer modules and fine-tuning. This can help improve the model's performance and allow it to learn more complex features from the data.
+
 For many-to-one tasks: 
 
 <br />
