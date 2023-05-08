@@ -13,6 +13,10 @@ torch>=1.7.1
 torchvision>=0.8.2
 visdom
 dominate
+scikit-image
+h5py
+scipy
+ml_collections
 cuda=>11.2
 ```
 ## Installation
